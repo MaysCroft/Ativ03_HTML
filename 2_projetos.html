@@ -85,42 +85,81 @@
         <main>
             <section class="py-5">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <h3> Serviços 1 </h3>
-                            <p> 
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui impedit neque 
-                                fugit velit repudiandae. Voluptatibus minus omnis architecto doloremque 
-                                magnam impedit nemo dolorum sunt maxime consequuntur tenetur illo! 
-                            </p>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalprojeto1">
-                                Leia mais...
-                            </button>
-                        </div>
 
-                        <div class="col-md-4">
-                            <h3> Serviços 2 </h3>
-                            <p> 
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis ipsum ullam 
-                                soluta non tempore? Molestiae illo pariatur minima reprehenderit nulla, impedit 
-                                similique eum fuga saepe expedita nemo laudantium, a distinctio.
-                            </p>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalprojeto2">
-                                Leia mais...
-                            </button>
-                        </div>
+                    <div id="proj" class="carousel carousel-dark slide" data-bs-ride="carousel">
 
-                        <div class="col-md-4">
-                            <h3> Serviços 3 </h3>
-                            <p> 
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor sit nulla ratione 
-                                tempora, esse cupiditate enim vitae fugit eaque dolores alias provident a nemo 
-                                nihil consequuntur magni delectus eos vero!
-                            </p>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalprojeto3">
-                                Leia mais...
-                            </button>
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#proj" data-bs-slide-to="0" class="active"></button>
+                          <button type="button" data-bs-target="#proj" data-bs-slide-to="1"></button>
+                          <button type="button" data-bs-target="#proj" data-bs-slide-to="2"></button>
                         </div>
+                      
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-6">
+                                        <h3> Projeto 1 - Página WEB - HTML/HTML5 </h3>
+                                        <p>
+                                            No desenvolvimento da atividade de criação de uma página web utilizando HTML/HTML5, 
+                                            o foco foi construir uma estrutura simples e organizada, que permite exibir o conteúdo 
+                                            de maneira clara. Utilizei tags básicas, como header, nav, section, e footer, 
+                                            para estruturar o site.
+                                        </p>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalprojeto1">
+                                            Leia mais...
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-6">
+                                        <h3> Projeto 2 - SITE CSS </h3>
+                                        <p>
+                                            Na atividade de desenvolvimento de um site utilizando CSS, o foco principal foi a estilização 
+                                            do conteúdo previamente estruturado em HTML. O CSS (Cascading Style Sheets) permite definir 
+                                            cores, tamanhos de fontes, espaçamentos e posicionamentos dos elementos, deixando a página mais 
+                                            atraente e organizada visualmente. A aplicação de estilos foi feita de forma a tornar o site 
+                                            responsivo, garantindo uma boa experiência em diferentes dispositivos, como computadores e celulares. 
+                                            Além disso, técnicas básicas de design foram utilizadas para melhorar a estética e a usabilidade 
+                                            da página.
+                                        </p>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalprojeto2">
+                                            Leia mais...
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-6">
+                                        <h3> Projeto 3 - Bootstrap - Front End - LandPage </h3>
+                                        <p> 
+                                            Este projeto é uma Landing Page desenvolvida utilizando o Bootstrap, com o objetivo de criar uma 
+                                            página inicial atraente e funcional. Bootstrap, como um dos frameworks mais populares para desenvolvimento 
+                                            front-end, facilita a criação de sites responsivos e adaptáveis a diferentes dispositivos. Durante o 
+                                            desenvolvimento, foram utilizados componentes prontos, como menus de navegação, botões e cards, 
+                                            proporcionando uma estrutura organizada e intuitiva. O foco foi garantir uma experiência agradável 
+                                            ao usuário, com uma interface simples e profissional.
+                                        </p>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalprojeto3">
+                                            Leia mais...
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <button class="carousel-control-prev" type="button" data-bs-target="#proj" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#proj" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
                     </div>
                 </div>
             </section>
@@ -130,13 +169,21 @@
                   <div class="modal-content">
 
                     <div class="modal-header">
-                      <h5 class="modal-title" id="modalProjeto1Label">Mais Informações - Serviço 1</h5>
+                      <h5 class="modal-title" id="modalProjeto1Label">Mais Informações - Projeto 1 - Página WEB - HTML/HTML5</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
 
                     <div class="modal-body">
-                      <p>Aqui está uma descrição detalhada sobre o Serviço 1. Inclua informações adicionais, benefícios e outros detalhes relevantes.</p>
-                      <img src="img/pexels-matthew-ang-52745-1327786.jpg" class="img-thumbnail" alt="exemplo">
+                      <p>
+                        Além da estruturação do conteúdo, o HTML5 oferece suporte a diversas funcionalidades modernas que melhoram 
+                        a experiência do usuário, como incorporação de vídeos e formulários otimizados. O projeto desenvolvido é simples, 
+                        mas serve como base para páginas mais complexas no futuro.
+                      </p>
+                      <p>Para acessar a página final, clique no link abaixo:</p>
+                      <img src="img/proj1.png" class="img-thumbnail" alt="exemplo">
+                      <p align="center">
+                        <a href="https://mayscroft.github.io/Ativ01_HTML/" target="_blank" rel="noopener noreferrer"> Acesse aqui... </a>
+                      </p>
                     </div>
 
                     <div class="modal-footer">
@@ -151,13 +198,21 @@
                   <div class="modal-content">
 
                     <div class="modal-header">
-                      <h5 class="modal-title" id="modalProjeto2Label">Mais Informações - Serviço 2</h5>
+                      <h5 class="modal-title" id="modalProjeto2Label">Mais Informações - Projeto 2 - SITE CSS</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
 
                     <div class="modal-body">
-                      <p>Aqui está uma descrição detalhada sobre o Serviço 2. Inclua informações adicionais, benefícios e outros detalhes relevantes.</p>
-                      <img src="img/pexels-egos68-1906658.jpg" class="img-thumbnail" alt="exemplo">
+                      <p>
+                        Com o uso de CSS, é possível transformar uma página HTML simples em algo visualmente mais interessante. 
+                        Através de seletores e propriedades CSS, ajustei os detalhes da página, como cores, bordas, espaçamento 
+                        e alinhamento. Também utilizei flexbox e grid para melhorar o layout, deixando-o mais flexível e adaptável.
+                      </p>
+                      <p>Para visualizar o resultado final dessa atividade, você pode acessar o site pelo link abaixo:</p>
+                      <img src="img/proj2.png" class="img-thumbnail" alt="exemplo">
+                      <p align="center">
+                        <a href="https://mayscroft.github.io/Ativ02_HTML/" target="_blank" rel="noopener noreferrer"> Acesse aqui... </a>
+                      </p>
                     </div>
 
                     <div class="modal-footer">
@@ -172,13 +227,17 @@
                   <div class="modal-content">
 
                     <div class="modal-header">
-                      <h5 class="modal-title" id="modalProjeto3Label">Mais Informações - Serviço 3</h5>
+                      <h5 class="modal-title" id="modalProjeto3Label">Mais Informações - Projeto 3 - Bootstrap - Front End - LandPage</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
 
                     <div class="modal-body">
-                      <p>Aqui está uma descrição detalhada sobre o Serviço 3. Inclua informações adicionais, benefícios e outros detalhes relevantes.</p>
-                      <img src="img/pexels-tobiasbjorkli-2113554.jpg" class="img-thumbnail" alt="exemplo">
+                      <p>
+                        Este projeto é o site que você está acessando agora! Utilizando o Bootstrap, foi possível construir uma Landing 
+                        Page moderna, que se adapta automaticamente a diferentes tamanhos de tela, tanto para desktops quanto para 
+                        dispositivos móveis. O framework ajudou a organizar o layout de forma eficiente, incluindo botões de chamada para 
+                        ação e uma navegação fluida, garantindo que o conteúdo seja apresentado de maneira clara e envolvente.
+                      </p>
                     </div>
 
                     <div class="modal-footer">
@@ -189,7 +248,7 @@
             </div>
         </main>
 
-        <footer class="bg-info py-4 text-black text-center">
+        <footer class="bg-dark py-4 text-white text-center">
 
             <div class="container">
 
@@ -198,19 +257,20 @@
                 <ul class="list-inline">
 
                     <li class="list-inline-item">
-                        <a href="6_privacidade.html" class="text-black-50"> Política de Privacidade </a>
+                        <a href="6_privacidade.html" class="text-white-50"> Política de Privacidade </a>
                     </li>
 
                     <li class="list-inline-item">
-                        <a href="7_uso.html" class="text-black-50"> Termos de Uso </a>
+                        <a href="7_uso.html" class="text-white-50"> Termos de Uso </a>
                     </li>
                 </ul>
 
                 <div class="social-icons mt-3">
-                    <a href="https://www.instagram.com/maycon_croft/" class="text-black me-3"><i class="bi bi-instagram"></i></a>
-                    <a href="https://www.facebook.com/maycon.croft" class="text-black me-3"><i class="bi bi-facebook"></i></a>
-                    <a href="https://www.linkedin.com/in/maycon-moraes-431611306/" class="text-black me-3"><i class="bi bi-linkedin"></i></a>
-                    <a href="#" class="text-black me-3"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/maycon_croft/" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.facebook.com/maycon.croft" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/maycon-moraes-431611306/" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/MaysCroft" class="text-white me-3"><i class="bi bi-github"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-whatsapp"></i></a>
                 </div>
 
                 <div class="mt-3">
